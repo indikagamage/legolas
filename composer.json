@@ -1,0 +1,55 @@
+{
+  "name": "indikagamage/legolas",
+  "type": "project",
+  "license": "MIT",
+  "description": "WordPress boilerplate for legolas with modern development tools, easier configuration, and an improved folder structure",
+  "authors": [
+    {
+      "name": "Indika Gamage",
+      "email": "indika@eight25media.com",
+      "homepage": "https://github.com/indikagamage/legolas"
+    }
+  ],
+  "keywords": [
+    "wordpress", "composer","wp"
+  ],
+  "support": {
+    "issues": "https://github.com/indikagamage/legolas/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require": {
+    "php": ">=5.6",
+    "composer/installers": "^1.4",
+    "vlucas/phpdotenv": "^2.0.1",
+    "johnpbloch/wordpress": "4.9.4",
+    "oscarotero/env": "^1.1.0",
+    "roots/wp-password-bcrypt": "1.0.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^3.0.2"
+  },
+  "extra": {
+    "installer-paths": {
+      "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "post-root-package-install": [
+      "php -r \"copy('.env.example', '.env');\""
+    ],
+    "test": [
+      "phpcs"
+    ]
+  }
+}
