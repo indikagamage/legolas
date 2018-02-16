@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "327dfc5c0193e2ce0d98bd111f24fab8",
+    "content-hash": "ded5d873ae1e4f45a1d660991876b17d",
     "packages": [
         {
             "name": "composer/installers",
@@ -125,6 +125,44 @@
                 "zikula"
             ],
             "time": "2017-12-29T09:13:20+00:00"
+        },
+        {
+            "name": "indikagamage/unyson",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/indikagamage/unyson.git",
+                "reference": "465bfd123ede26a33f5579c7ac34dc8d17fbf184"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/indikagamage/unyson/zipball/465bfd123ede26a33f5579c7ac34dc8d17fbf184",
+                "reference": "465bfd123ede26a33f5579c7ac34dc8d17fbf184",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Indika Gamage",
+                    "email": "indika@eight25media.com",
+                    "homepage": "https://github.com/indikagamage/unyson"
+                }
+            ],
+            "description": "unyson framework for WordPress",
+            "keywords": [
+                "composer",
+                "unyson",
+                "wordpress",
+                "wp"
+            ],
+            "time": "2018-02-16T05:24:49+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -459,7 +497,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "indikagamage/unyson": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
