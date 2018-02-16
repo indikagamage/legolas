@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ded5d873ae1e4f45a1d660991876b17d",
+    "content-hash": "f6f8db59456fe883c8a41f7d4e1b4bb1",
     "packages": [
         {
             "name": "composer/installers",
@@ -163,6 +163,45 @@
                 "wp"
             ],
             "time": "2018-02-16T05:24:49+00:00"
+        },
+        {
+            "name": "indikagamage/unyson-builder",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/indikagamage/unyson-builder.git",
+                "reference": "1a7db000bb731295391037118c52babc31270aa6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/indikagamage/unyson-builder/zipball/1a7db000bb731295391037118c52babc31270aa6",
+                "reference": "1a7db000bb731295391037118c52babc31270aa6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.6"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Indika Gamage",
+                    "email": "indika@eight25media.com",
+                    "homepage": "https://github.com/indikagamage/unyson"
+                }
+            ],
+            "description": "Page builder for WordPress unyson framework",
+            "keywords": [
+                "builder",
+                "composer",
+                "unyson",
+                "wordpress",
+                "wp"
+            ],
+            "time": "2018-02-16T11:42:18+00:00"
         },
         {
             "name": "johnpbloch/wordpress",
@@ -498,7 +537,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "indikagamage/unyson": 20
+        "indikagamage/unyson": 20,
+        "indikagamage/unyson-builder": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

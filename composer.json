@@ -26,13 +26,15 @@
     "johnpbloch/wordpress": "4.9.4",
     "oscarotero/env": "^1.1.0",
     "roots/wp-password-bcrypt": "1.0.0",
-    "indikagamage/unyson": "dev-master"
+    "indikagamage/unyson": "dev-master",
+    "indikagamage/unyson-builder": "dev-master"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^3.0.2"
   },
   "extra": {    
     "installer-paths": {
+      "web/app/plugins/unyson/framework/extensions/builder/": ["indikagamage/unyson-builder"],
       "web/app/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
       "web/app/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
